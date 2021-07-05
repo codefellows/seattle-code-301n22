@@ -185,12 +185,15 @@ console.log(Student.courseName());
 
 // STEP 11
 // How do arrow functions affect constructor functions?
-Student.prototype.scope = function() {
+// You can replace the keyword function with the fat arrow =>.
+// Arrow functions allow you to shorten your code into oneliners.
+// We can delete the curley brackets and alert using a => and get an implicit return
+Student.prototype.scope = () => {
   console.log(this);
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(joe.scope());
+console.log(joe.scope());
 
 Student.prototype.scopeArrow = () => console.log(this);
 
