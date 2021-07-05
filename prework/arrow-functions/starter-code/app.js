@@ -162,7 +162,7 @@ console.log(joe);
 
 
 
-Student.prototype.greeting = () => {
+Student.prototype.greeting = function() {
   return `Hi, my name is ${this.name}`;
 };
 
