@@ -185,11 +185,12 @@ console.log(Student.courseName());
 
 // STEP 11
 // How do arrow functions affect constructor functions?
+// 
 // You can replace the keyword function with the fat arrow =>.
 // Arrow functions allow you to shorten your code into oneliners.
 // We can delete the curley brackets and alert using a => and get an implicit return.
 // refactoring your code with => can break the code when using 'this'.
-Student.prototype.scope = () => {
+Student.prototype.scope = function() {
   console.log(this);
 };
 
@@ -199,12 +200,17 @@ console.log(joe.scope());
 Student.prototype.scopeArrow = () => console.log(this);
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(joe.scopeArrow());
+console.log(joe.scopeArrow());
 
 // TODO: Write a COMMENT below to answer the following questions.
 // 1. What is "this" when joe.scope() is invoked?
 //
+//"this" refers to the object of joe and the scope of visible variables/global scope.
+//
 // 2. What is "this" when joe.scopeArrow() is invoked?
+//
+//The line comes back undefined. Outside of the function "this" referes to the global object window, when I look in the console. "this" also refers to joe.
 //
 // 3. Explain why "this" is different when an arrow function is used.
 //
+//"this" is different when using an arrow function because "this" refers and binds to the global object.
