@@ -118,7 +118,7 @@ let sum = (a, b, c, d) => a+b+c+d;
 // DONE 10 : Uncomment the following line of code to see the output in the browser console
 console.log(sum(1, 2, 3, 4));
 
-
+//Non Arrow Function
 // let objectLit = function() {
 //   return {
 //     key1: 'value1',
@@ -127,24 +127,24 @@ console.log(sum(1, 2, 3, 4));
 //   };
 // };
 
-let objectLit = () => ({
-  key1: 'value1',
-  key2: 'value2',
-  key3: 'value3',
-});
+//Arrow Function
+let objectLit = () => ({key1: 'value1', key2: 'value2', key3: 'value3'});
 
-// TODO: Uncomment the following line of code to see the output in the browser console
+// DONE: Uncomment the following line of code to see the output in the browser console
 console.log(objectLit());
 
+//Non Arrow Function
+// let sumAndProduct = function(a, b) {
+//   let sum = a + b;
+//   let product = a * b;
+//   return [sum, product];
+// };
 
-let sumAndProduct = function(a, b) {
-  let sum = a + b;
-  let product = a * b;
-  return [sum, product];
-};
+//Arrow Function
+let sumAndProduct = (a, b) => {let sum = a + b; let product = a * b; return [sum, product];};
 
-// TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(sumAndProduct(3, 9));
+// DONE: Uncomment the following line of code to see the output in the browser console
+console.log(sumAndProduct(3, 9));
 
 
 let message = function(name) {
