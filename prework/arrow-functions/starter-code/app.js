@@ -84,8 +84,8 @@ const oldObject = function(array) {
   };
 };
 
-// TODO: Uncomment the following line of code to see the output in the browser console
-// console.log('Hello from the old object function', oldObject(['hi', 'hello', 'are you there?']));
+// DONE: Uncomment the following line of code to see the output in the browser console
+console.log('Hello from the old object function', oldObject(['hi', 'hello', 'are you there?']));
 
 
 // STEP 9
@@ -97,8 +97,8 @@ const newObject = array => ({
   thirdValue: array[2]
 });
 
-// TODO: Uncomment the following line of code to see the output in the browser console
-// console.log('Hello from the new object function', newObject(['hi', 'hello', 'are you there?']));
+// DONE: Uncomment the following line of code to see the output in the browser console
+console.log('Hello from the new object function', newObject(['hi', 'hello', 'are you there?']));
 
 
 // STEP 10
@@ -108,12 +108,15 @@ const newObject = array => ({
 
 
 
-let sum = function(a, b, c, d) {
-  return a + b + c + d;
-};
+// let sum = function(a, b, c, d) {
+//   return a + b + c + d;
+// };
 
-// TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(sum(1, 2, 3, 4));
+let sum = (a, b, c, d) => a+b+c+d;
+
+
+// DONE 10 : Uncomment the following line of code to see the output in the browser console
+console.log(sum(1, 2, 3, 4));
 
 
 let objectLit = function() {
